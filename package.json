@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "express": "^4.18.2",
-    "node.js": "^0.0.1-security"
+    "node.js": "^0.0.1-security",
+    "uuid": "^9.0.0"
   },
   "name": "programaria",
   "version": "1.0.0",
@@ -14,4 +15,3 @@
   "license": "ISC",
   "description": ""
 }
-
