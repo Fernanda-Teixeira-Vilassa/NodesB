@@ -5,16 +5,16 @@ import { Footer } from './Footer.jsx'
 
 import Axios from 'axios'
 
-import styles from '../styles/content.module.css'
+import styles from '../styles/.module.css'
 
-export function Content() {
+export function () {
   const [repositories, setRepositories] = useState([])
   const [nome, setNome] = useState('')
   const [minibio, setminibio] = useState('')
   const [citacao, setCitacao] = useState('')
   const [imagem, setImagem] = useState('')
   const [success, setSuccess] = useState(false)
-  const baseURL = 'https://back-end-6c7c.onrender.com/mulheres'
+  const baseURL = 'https://backend-rcz1.onrender.com/mulheres'
 
   useEffect(() => {
     async function getData() {
