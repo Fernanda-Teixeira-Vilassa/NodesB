@@ -1,5 +1,6 @@
 const express = require ('express') //Iniciando o Express
 const router = express.Router() //Configuração a primeira parte da Rota
+const cors = require ('cors')//Inciando o Cors
 //const { v4: uuidv4 } = require('uuid') //Chamando a biblioteca uuid
 
 //Importando as configuração do Banco de Dados
@@ -11,6 +12,7 @@ const Mulher = require('./model')
 
 const app = express() //Inciando o app
 app.use(express.json())
+app.use(cors()) //Liberando para uso do frontEnd
 const porta = 3333 // Criando a porta
 
 //Criando Lista Incial de Mulheres
